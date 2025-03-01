@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 80%;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px gray;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card h3 {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/40087/thar-exterior-right-front-three-quarter-35.jpeg?isig=0&q=80" alt="Card Image">
+            <h3>Mahindra Thar</h3>
+            <p>The Mahindra Thar is a compact, four-wheel drive, off-road two-door SUV manufactured by Indian automaker Mahindra and Mahindra Ltd. It was introduced in October 4, 2010 and replaced the Mahindra Major.</p>
+        </div>
+        <div class="card">
+            <img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/6876585/150028_car.jpg?quality=90&strip=all&crop=0%2C4.7889098928797%2C100%2C90.422180214241&w=2400" alt="Card Image">
+            <h3>Ferrari</h3>
+            <p>Ferrari is an Italian luxury sports car manufacturer based in Maranello. Founded in 1939 by Enzo Ferrari (1898–1988), the company built its first car in 1940, adopted its current name in 1945, and began to produce its current line of road cars in 1947.</p>
+        </div>
+        <div class="card">
+            <img src="https://uploads.vw-mms.de/system/production/images/cws/076/636/images/0575ab66e66c675990977dc372a99083b9760894/B2023CW00305_web_1600.jpg?1685118426" alt="Card Image">
+            <h3>Lamborghini</h3>
+            <p>Lamborghini, usually referred to as Lamborghini or colloquially Lambo, is an Italian manufacturer of luxury sports cars and SUVs based in Sant'Agata Bolognese. The company is owned by the Volkswagen Group through its subsidiary Audi.</p>
+        </div>
+    </div>
+</body>
+</html>

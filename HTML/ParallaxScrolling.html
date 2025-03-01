@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .parallax {
+            position: relative;
+            height: 100vh;
+            background-image: url('https://www.flatworldsolutions.com/digital-photography/images/how-to-add-the-parallax-effect-to-your-photos.jpg'); 
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .content {
+            position: relative;
+            background: white;
+            padding: 50px;
+            text-align: center;
+        }
+        .layer {
+            position: relative;
+            text-align: center;
+            padding: 50px;
+            font-size: 24px;
+        }
+        .layer:nth-child(even) {
+            background: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax"></div>
+    <div class="layer">Layer 1 - Scrolls at normal speed</div>
+    <div class="parallax"></div>
+    <div class="layer">Layer 2 - Another content section</div>
+    <div class="parallax"></div>
+    <div class="layer">Layer 3 - More content</div>
+    <div class="parallax"></div>
+    <div class="content">
+        <h2>End of Page</h2>
+        <p>The parallax effect ends here.</p>
+    </div>
+</body>
+</html>
