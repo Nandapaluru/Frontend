@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Modal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .container {
+        max-width: 1200px;
+      }
+      .header {
+        text-align: center;
+        padding: 20px;
+        background-color: rgb(125, 183, 202);
+      }
+      .grid-container {
+        margin-top: 20px;
+      }
+      .grid-item {
+        padding: 20px;
+        border: 1px solid #d79b9b;
+        text-align: center;
+      }
+      .footer {
+        background-color: darkgray;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+      }
+      
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+      </div>
+  
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">My Website</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+              <button class="btn btn-primary" type="button"  data-bs-toggle="modal" data-bs-target="#signupModal">
+                Sign Up
+            </button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+      <div class="container grid-container">
+        <div class="row">
+          <div class="col-md-6 grid-item">
+            <h2>About Our Company</h2>
+            <p>
+              We are a leading company providing the best services to our
+              customers. Our team is dedicated to delivering high-quality products
+              and exceptional customer service.Over time, companies have evolved
+              to have the following features: "separate legal personality, limited
+              liability, transferable shares, investor ownership, and a managerial
+              hierarchy".The company, as an entity, was created by the state which
+              granted the privilege of incorporation.
+            </p>
+            <p>
+              A company can be created as a legal person so that the company
+              itself has limited liability as members perform or fail to discharge
+              their duties according to the publicly declared incorporation
+              published policy. When a company closes, it may need to be
+              liquidated to avoid further legal obligations. Companies may
+              associate and collectively register themselves as new companies; the
+              resulting entities are often known as corporate groups.
+            </p>
+          </div>
+          <div class="col-md-6 grid-item">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/M%C3%BCnster%2C_LVM%2C_B%C3%BCrogeb%C3%A4ude_--_2013_--_5149-51.jpg/1200px-M%C3%BCnster%2C_LVM%2C_B%C3%BCrogeb%C3%A4ude_--_2013_--_5149-51.jpg"
+              alt="Company Image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+  
+      <div class="footer">
+        <p>Contact Us: +91 91XX XXX XXX | nandapaluru@example.com</p>
+      </div>
+    
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 250px;
+        }
+        .hover-button {
+            background-color: steelblue;
+            color: white;
+            padding: 50px 100px;
+            font-size: 32px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .hover-button:hover {
+            background-color: darkblue;
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+    <button class="hover-button">Hover Me</button>
+</body>
+</html>
